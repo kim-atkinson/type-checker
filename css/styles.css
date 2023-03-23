@@ -62,3 +62,7 @@ input[type="text"] {
     outline: none;
     padding: 5px 7px;
 }
+
+section.output {
+    font-size: 64px;
+}
