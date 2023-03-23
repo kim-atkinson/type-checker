@@ -63,6 +63,12 @@ input[type="text"] {
     padding: 5px 7px;
 }
 
-section.output {
+textarea.output {
     font-size: 64px;
+    width: 100%;
+    background: none;
+    color: #ffffff; 
+    border: none;
+    outline: none;
+    min-height: 100vh;
 }
