@@ -107,4 +107,22 @@ div.colors div {
     border-radius: 50%;
     text-align: center;
     margin: 5px 10px 0 0px;
+    transition: border 0.25s;
+}
+
+div.colors div.selected {
+    border: 2px solid #ffffff; 
+}
+
+input[type="checkbox"] {
+    
+ 
+    width: 16px;
+    height: 16px; 
+    background-color: #575757;
+    
+}
+
+input[type="checkbox"]:checked {
+    background-color: #ffffff; 
 }
