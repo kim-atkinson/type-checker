@@ -1,9 +1,15 @@
 const sentenceTag = document.querySelector(`input[type="text"]`)
+
 const typesizeTag = document.querySelector(`input[name="typesize"]`)
 const typesizeOutput = document.querySelector("span.typesize-output")
 
 const lineheightTag = document.querySelector(`input[name="lineheight"]`)
 const lineheightOutput = document.querySelector("span.lineheight-output")
+
+const italicTag = document.querySelector(`input[name="italic"]`)
+
+const typefaceTag = document.querySelector(`select[name="typeface"]`)
+
 const outputTag = document.querySelector("textarea.output")
 const originalText = outputTag.value
 
@@ -37,4 +43,21 @@ typesizeTag.addEventListener("input", function () {
 lineheightTag.addEventListener("input", function () {
     outputTag.style.lineHeight = this.value
     lineheightOutput.innerHTML = this.value
+})
+
+// When italic checkbox is activated, update the font style to either 
+// Normal or italix if it's checked or not
+
+italicTag.addEventListener("change", function () {
+    if (this.checked) {
+        outputTag.style.fontStyle = "italic"
+    } else {
+        outputTag.style.fontStyle = "normal"
+    }
+})
+
+
+// When selection for typeface is changed, update the font family. 
+typefaceTag.addEventListener("input", function () {
+    outputTag.style.fontFamily = this.value 
 })
