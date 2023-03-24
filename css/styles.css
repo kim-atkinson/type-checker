@@ -26,7 +26,7 @@ body {
 
     background-color: #2a2a2a;
     color: #ffffff;
-    margin: 40px 40px 40px 320px;
+    margin: 0 0 0 280px;
 }
 
 section.options {
@@ -93,5 +93,18 @@ textarea.output {
     border: none;
     outline: none;
     min-height: 100vh;
+    padding: 40px;
 }
 
+div.colors {
+    display: flex;
+}
+
+div.colors div {
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px 10px 0 0px;
+}
