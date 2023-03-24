@@ -3,6 +3,9 @@ const sentenceTag = document.querySelector(`input[type="text"]`)
 const typesizeTag = document.querySelector(`input[name="typesize"]`)
 const typesizeOutput = document.querySelector("span.typesize-output")
 
+const fontweightTag = document.querySelector(`input[name="fontweight"]`)
+const fontweightOutput = document.querySelector(`span.fontweight-output`)
+
 const lineheightTag = document.querySelector(`input[name="lineheight"]`)
 const lineheightOutput = document.querySelector("span.lineheight-output")
 
@@ -38,6 +41,11 @@ typesizeTag.addEventListener("input", function () {
     outputTag.style.fontSize = this.value + "px"
     // Changes the HTML
     typesizeOutput.innerHTML = this.value + "px"
+})
+
+fontweightTag.addEventListener("input", function () {
+    outputTag.style.fontWeight = this.value
+    fontweightOutput.innerHTML = this.value
 })
 
 lineheightTag.addEventListener("input", function () {
